@@ -1,0 +1,42 @@
+.todos {
+   margin-top: 50px;
+   overflow-y: auto;
+   height: 300px;
+   .todos-item {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      border-left: 2px solid #2196f3;
+      position: relative;
+      &.completed {
+         &::after {
+            position: absolute;
+            content: '';
+            left: 25px;
+            width: 700px;
+            height: 2px;
+            top: 50%;
+            background: #2196f3;
+         }
+      }
+      &.important {
+         color: red;
+         font-size: 22px;
+      }
+   }
+
+   .todos-buttons {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      i {
+         margin-left: 10px;
+         &:hover {
+            transform: scale(2);
+            transition: transform 0.3s;
+         }
+      }
+   }
+}
