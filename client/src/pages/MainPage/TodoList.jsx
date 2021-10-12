@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router';
-import './mainPage.scss'
 
 const TodoList = ({todoList, deleteTodos, updateTodo}) => {
    const history = useHistory()

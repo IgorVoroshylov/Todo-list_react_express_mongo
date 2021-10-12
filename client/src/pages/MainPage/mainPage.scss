@@ -3,12 +3,14 @@
    overflow-y: auto;
    height: 300px;
    .todos-item {
-      padding: 10px 15px;
+      padding: 15px 15px;
       display: flex;
       align-items: center;
       cursor: pointer;
       border-left: 2px solid #2196f3;
       position: relative;
+      margin-bottom: 10px;
+      transition: 0.3s;
       &.completed {
          &::after {
             position: absolute;
@@ -23,6 +25,9 @@
       &.important {
          color: red;
          font-size: 22px;
+      }
+      &:hover {
+         background: #f8f8f8;
       }
    }
 
